@@ -49,6 +49,9 @@ while (i < favouriteAnimals.length) {
   i++;
 }
 
+// ForEach() loop --> it is a method, a JS default function
+favouriteAnimals.forEach((animal) => console.log(animal));
+
 //------------------------------------------------
 
 // Favourite colours
@@ -70,6 +73,9 @@ while (x < favouriteColours.length) {
   x++;
 }
 
+// ForEach() loop --> it is a method, a JS default function
+favouriteColours.forEach((colour) => console.log(colour));
+
 //------------------------------------------------
 
 // Favourite numbers
@@ -90,3 +96,6 @@ while (y < favouriteNumbers.length) {
   console.log(favouriteNumbers[y]);
   y++;
 }
+
+// ForEach() loop --> it is a method, a JS default function
+favouriteNumbers.forEach((number) => console.log(number));
