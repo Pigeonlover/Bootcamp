@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: beige;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* --> 4 colums */
+  /* fr --> "fraction". Automatically divides the width of the screen equally. Makes it dynamic */
+
+  grid-template-rows: 10% 1fr 1fr 1fr 5%; /* --> 5 rows */
+
+  height: 100vh;
+}
+
+header,
+footer {
+  grid-column-start: 1;
+  grid-column-end: -1;
+
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 5;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+p {
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cat1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#cat2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+footer {
+  grid-row-start: -1;
+}
