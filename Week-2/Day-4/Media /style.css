@@ -1,0 +1,12 @@
+* {
+  background-color: antiquewhite;
+  margin: 0;
+  padding: 0;
+}
+
+audio {
+  height: 100px;
+  background-color: maroon;
+
+  display: flex;
+}
