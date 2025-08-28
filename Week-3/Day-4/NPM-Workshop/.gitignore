@@ -1,0 +1,5 @@
+# Ignore files and folders that do not need to be pushed to GitHub.
+
+# Add name/s of folder/s to ignore
+
+node_modules
