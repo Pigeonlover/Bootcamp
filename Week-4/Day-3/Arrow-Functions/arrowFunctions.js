@@ -44,3 +44,79 @@ array.forEach((item) => console.log(item));
 //
 
 // Preference: if the function has a name, write it as a regular function. For a callback/anonymous function, use an arrow function.
+
+//
+//
+//
+//
+//
+//
+//
+
+// WORKSHOP
+
+//
+//
+// REGULAR
+function handleHobbySubmit(event) {
+  event.preventDefault();
+  const formDataTemplate = new FormData(hobbyForm);
+  const formValues = Object.fromEntries(formDataTemplate);
+  console.log(formValues);
+}
+
+// ARROW FUNCTION --->
+const handleHobbySubmit = (event) => event.preventDefault();
+const formDataTemplate = new FormData(hobbyForm);
+const formValues = Object.fromEntries(formDataTemplate);
+console.log(formValues);
+//
+//
+//
+
+// REGULAR
+async function getPosts() {
+  const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const data = await response.json();
+  return data;
+}
+
+// ARROW FUNCTION --->
+const getPosts = async () => {
+  const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const data = await response.json();
+  return data;
+};
+//
+//
+//
+
+// REGULAR
+function greet(name) {
+  return `Hello ${name}`;
+}
+
+// ARROW FUNCTION --->
+const greet = (name) => `Hello ${name}`;
+//
+//
+//
+
+// REGULAR
+function handleSubmit(event) {
+  event.preventDefault();
+  const username = event.target.username.value;
+  const message = event.target.message.value;
+
+  console.log({ username: username, message: message });
+}
+
+// ARROW FUNCTION --->
+const handleSubmit = (event) => event.preventDefault();
+const username = event.target.username.value;
+const message = event.target.message.value;
+
+console.log({ username: username, message: message });
+//
+//
+//
