@@ -1,0 +1,8 @@
+/* Use this file to edit my Button component. */
+
+/* 
+Classes and IDs are more encouraged for styling. When the App gets more complex, we need to style in a more targeted name --> pure selectors (className, id). Using HTML tags are not recommended in CSS */
+
+.main-button {
+  background-color: blue;
+}
