@@ -1,13 +1,20 @@
 import "./App.css";
 import MyImageComponent from "./GalleryImage";
 import Button from "./components/Button";
+import Image from "./components/Image";
 
-function App() {
+export default function App() {
   return (
     <>
       <div>
-        <h1>Hello, world!</h1>
+        <h1 className="heading">Hello, world!</h1>
       </div>
+
+      ImageTrackList.forEach({item} => {
+        return (
+          <Image imgUrl={item.imgUrl} title={item.title} author={item.author} />
+        )
+      })
 
       <MyImageComponent />
 
@@ -16,4 +23,12 @@ function App() {
   );
 }
 
-export default App;
+// We cannot use a classic for loop inside the App return. I can only use methods.
+
+
+async function getData() {
+  const response = await fetch(`${import.meta.env.VITE_API_URL}`);
+  const data = await response.json();
+  console.log(data);
+}
+getData();
