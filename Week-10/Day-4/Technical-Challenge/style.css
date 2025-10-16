@@ -1,0 +1,53 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+#main-container {
+  height: 600px;
+  width: 80%;
+  border: 1px solid white;
+
+  padding: 8px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+
+  gap: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#articles-container {
+  width: 90%;
+  border: 1px solid white;
+
+  padding: 8px;
+}
+
+#card-one {
+  border: 1px solid white;
+  padding: 8px;
+  margin-bottom: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.image-container {
+  grid-column-start: 0;
+  grid-column-start: 1;
+
+  grid-row-start: 0;
+  grid-row-start: 1;
+}
+
+#card-two {
+  border: 1px solid white;
+  padding: 8px;
+}
